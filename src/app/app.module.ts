@@ -7,17 +7,19 @@ import { HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FeedbackFormComponent } from './components/feedback-form/feedback-form.component';
 import { FeedbackService } from './services/feedback.service'; 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FeedbackFormComponent
+    FeedbackFormComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ],
   providers: [FeedbackService],
   bootstrap: [AppComponent]

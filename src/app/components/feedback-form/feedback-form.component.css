@@ -54,7 +54,6 @@
     margin-top: 83px;
 }
 
-/* .listDiv{
-    display: flex;
-    justify-content: center;
-} */
+.modal-header{
+    align-content: center;
+}

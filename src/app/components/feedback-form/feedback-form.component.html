@@ -2,7 +2,7 @@
   <div class="secDiv">
     <h2 class="feedbackHeader">Give Your Valuable Feedback</h2>
     <hr style="background-color:white">
-    <form (submit)= "feedbackFormSubmit()">
+    <form (submit)= "feedbackFormSubmit(content)">
       <div class="formDiv">
         <div class="listDiv">
           <ul style="list-style-type:none" class="optionList">
@@ -12,9 +12,18 @@
           </ul>
         </div>
       <div class="btn-div">
-        <button type = "submit" class = "btn btn-primary butn">Submit</button>
+        <button type = "submit" class = "btn btn-primary butn" data-toggle="modal" data-target="#myModal">Submit</button>
       </div>
      </div>
    </form>
   </div>
 </div>
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Thank You for your Feedback</h4>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Close</button>
+    </div>
+  </ng-template>
