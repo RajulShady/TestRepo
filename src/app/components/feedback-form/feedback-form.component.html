@@ -1,3 +1,20 @@
-<p>
-  feedback-form works!
-</p>
+<div class = "mainDiv">
+  <div class="secDiv">
+    <h2 class="feedbackHeader">Give Your Valuable Feedback</h2>
+    <hr style="background-color:white">
+    <form (submit)= "feedbackFormSubmit()">
+      <div class="formDiv">
+        <div class="listDiv">
+          <ul style="list-style-type:none" class="optionList">
+            <li class = "radioList" *ngFor="let item of objectKeys(this.ratings)">
+              <input style="margin-right: 10px; margin-bottom:7px;" [(ngModel)]="selectedValue" type="radio" name="ratings" [value]="this.ratings[item]">{{this.ratings[item]}}<br>
+            </li>
+          </ul>
+        </div>
+      <div class="btn-div">
+        <button type = "submit" class = "btn btn-primary butn">Submit</button>
+      </div>
+     </div>
+   </form>
+  </div>
+</div>

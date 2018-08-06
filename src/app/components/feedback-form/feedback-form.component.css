@@ -1,0 +1,60 @@
+.mainDiv {
+    /* background-color: blueviolet;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+    align-content: center;
+    padding-top: 50px;
+    margin-top: 50px; */
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:350px;
+    height:350px;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -10em; /*set to a negative number 1/2 of your width*/
+    background-color: #292c54;
+    border: 2px solid #d35400;
+    border-radius: 5px;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    align-content: center;
+
+}
+
+.radioList{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secDiv{
+   
+}
+
+.butn{
+  background-color: #d35400;
+  padding: 8px 20px;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+
+.feedbackHeader{
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 25px 5px 15px 5px;
+  font-size: 20px;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 83px;
+}
+
+/* .listDiv{
+    display: flex;
+    justify-content: center;
+} */
